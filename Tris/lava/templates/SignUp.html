@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'global.css'%}" />
+    <link rel="stylesheet" href="{%static 'SignUp.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up3">
+      <form class="welcome-please-fill-out-the-f-parent" action="/signup/" method="post">
+        {% csrf_token %}
+        <div class="welcome-please-fill-container">
+          <p class="welcome">
+            <b>Welcome! </b>
+          </p>
+          <p class="please-fill-out">
+            please fill out the form below to create your account.
+          </p>
+        </div>
+        <div class="email-group">
+          <div class="name">email</div>
+          <input class="frame-inner" type="text" name="email" style="align-items: center;">
+        </div>
+        <div class="password-group">
+          <div class="name">Password</div>
+          <input class="frame-inner" type="password" name="password">
+        </div>
+        <div class="name-parent">
+          <div class="name">name</div>
+          <input class="frame-inner" type="text" name="name">
+        </div>
+        <button class="frame-div" id="frameContainer3" type="submit">
+          <div class="name" >sign up</div>
+        </button>
+      </form>
+      <div class="forgot-password-group">
+        <div class="forgot-password1">forgot password</div>
+        <button class="already-have-an">already have an account</button>
+      </div>
+      <div class="have-questions-or-need-assista-container">
+        <div class="have-questions-or2">
+          Have questions or need assistance? Feel free to contact our support
+          team. We're here to help!
+        </div>
+        <div class="contact-us-frame">
+          <div class="name">Contact us</div>
+        </div>
+      </div>
+      <div class="head2">
+        <div class="head-inner"></div>
+        <b class="multilegalinfo3">
+          <span>Multi</span>
+          <span class="l3">L</span>
+          <span class="egal3">egal</span>
+          <span>info</span>
+        </b>
+        <div class="sign-up-wrapper1">
+          <div class="name">Sign up</div>
+        </div>
+        <div class="login-wrapper1" id="frameContainer1">
+          <div class="name">Login</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'global.css'%}" />
+    <link rel="stylesheet" href="{%static 'Login.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login1">
+      <div class="have-questions-or-need-assista-group">
+        <div class="have-questions-or1">
+          Have questions or need assistance? Feel free to contact our support
+          team. We're here to help!
+        </div>
+        <div class="contact-us-container">
+          <div class="email">Contact us</div>
+        </div>
+      </div>
+      <form class="welcome-back-please-log-in-to-parent" action="" method="post">
+        {% csrf_token %}
+        <div class="welcome-back-please-container">
+          <p class="welcome-back">
+            <b>Welcome back! </b>
+          </p>
+          <p class="please-log-in">Please Log in to access your account.</p>
+        </div>
+        <div class="email-parent">
+          <div class="email">email</div>
+          <input class="frame-child" type="email" name="ema">
+        </div>
+        <div class="password-parent">
+          <div class="email">Password</div>
+          <input class="frame-child" type="password" name="pas">
+        </div>
+        <button class="login-container" type="submit">
+          <div class="email" >Login</div>
+        </button>
+      </form>
+      <div class="forgot-password-parent">
+        <div class="forgot-password">forgot password</div>
+        <div class="dont-have-an">don’t have an account</div>
+      </div>
+      <div class="head1">
+        <div class="head-item"></div>
+        <b class="multilegalinfo2">
+          <span>Multi</span>
+          <span class="l2">L</span>
+          <span class="egal2">egal</span>
+          <span>info</span>
+        </b>
+        <div class="sign-up-frame" id="frameContainer">
+          <div class="email">Sign up</div>
+        </div>
+        <div class="login-frame">
+          <div class="email">Login</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

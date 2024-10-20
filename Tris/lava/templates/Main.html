@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'global.css'%}" />
+    <link rel="stylesheet" href="{%static 'Main.css'%}" />
+    <link rel="stylesheet" href="{%static 'Form.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+    <style>
+      .not-visible{
+        display: none;
+      }
+      .blur{
+        background-color: white;
+        opacity: 10%;
+      }
+      .center {
+      border: 5px solid;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="form" id="form-skip">
+      <form action="/data/" method="post" id="submit-form">
+        {%csrf_token%}
+      <div class="useer-input-form">
+        <div class="welcome-user-information-container">
+          <p class="welcome1">
+            <b>Welcome!</b>
+          </p>
+          <p class="user-information-form">User Information Form</p>
+        </div>
+        <hr>
+        <button id="skip" class="skip" type="button">Skip</button>
+        <div class="name-group">
+          <div class="date-of-birth">Name</div>
+          <input class="frame-child10" name="name" style="font-size:large;" type="text" value="{{name}}" disabled>
+        </div>
+        <div class="date-of-birth-parent">
+          <div class="date-of-birth">Date of birth</div>
+          <input class="frame-child10" type="date" name="date">
+        </div>
+        <div class="date-of-birth-parent">
+          <div class="date-of-birth">Birth Place</div>
+          <input type="text" class="frame-child10" name="birth_place">
+        </div>
+        <div class="email-container">
+          <div class="date-of-birth">email</div>
+          <input class="frame-child10" type="text" style="font-size:large; padding-top:10px;" value="{{email}}" disabled>
+        </div>
+        <div class="preferred-language-parent">
+          <div class="date-of-birth">
+            <p class="preferred">preferred</p>
+            <p class="preferred">language</p>
+          </div> 
+          <input class="frame-child10" type="text" name="language">
+        </div>
+        <div class="countrystate-parent">
+          <div class="date-of-birth">country/state</div>
+          <select name="state" class="frame-child10" name="state">
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="GA">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="GA">Goa</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="WB">West Bengal</option>
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="CH">Chandigarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="PY">Puducherry</option>
+          </select>
+        </div>
+        <div class="city-parent">
+          <div class="date-of-birth">city</div>
+          <input class="frame-child10" type="text" name="city">
+        </div>
+        <div class="gender-parent">
+          <div class="date-of-birth">Gender</div>
+          <select class="frame-child10" name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+        <div class="education-parent">
+          <div class="date-of-birth">education</div>
+          <select class="frame-child10" name="education">
+            <option value="S">School</option>
+            <option value="C">College</option>
+          </select>
+        </div>
+        <div class="phone-number-parent">
+          <div class="date-of-birth">
+            <p class="preferred">phone</p>
+            <p class="preferred">number</p>
+          </div>
+          <input class="frame-child10" type="text" name="mobile">
+        </div>
+        <button class="submit-wrapper" type="submit">
+          <div class="date-of-birth">submit</div>
+        </button>
+      </div>
+      <div class="contact">
+        <div class="have-questions-or3">
+          Have questions or need assistance? Feel free to contact our support
+          team. We're here to help!
+        </div>
+        <div class="contact-us-wrapper1">
+          <div class="date-of-birth">Contact us</div>
+        </div>
+      </div>
+      <div class="frame-group">
+        <div class="aadhar-cardpan-parent">
+          <b class="aadhar-cardpan">Pan Card </b>
+          <input class="frame-child20" type="checkbox" value=1 name="pan">
+        </div>
+        <div class="carddrivers-license-parent">
+          <b class="aadhar-cardpan" style="left: 15px;">Driver's License</b>
+          <input class="frame-child20" type="checkbox" value=2 style="right: 20px;" name="pan">
+        </div>
+        <div class="passportvoter-id-card-parent">
+          <b class="aadhar-cardpan" style="right: 35px;">Passport</b>
+          <input class="frame-child20" type="checkbox" value=3 style="left: 30px;" name="pan">
+        </div>
+        <div class="bank-accountcheckbookother-parent">
+          <b class="bank-accountcheckbookother" style="left: 40px;">Voter ID</b>
+          <input class="frame-child20" type="checkbox" value=4 style="right: 45px;" name="pan">
+        </div>
+      </div>
+      </form>
+      <div class="head3">
+        <div class="head-child1"></div>
+        <b class="multilegalinfo5">
+          <span>Multi</span>
+          <span class="l5">L</span>
+          <span class="egal5">egal</span>
+          <span>info</span>
+        </b>
+      </div>
+    </div>
+    <div id="main" class="not-visible">
+    <div class="main">
+      <b class="multilegalinfo4" id="multiLegalinfoText">
+        <span>Multi</span>
+        <span class="l4">L</span>
+        <span class="egal4">egal</span>
+        <span>info</span>
+      </b>
+      <div class="main-child"></div>
+      <div class="content">
+        <div class="content-child"></div>
+        <div class="when-an-individual-starts-earn-wrapper">
+          <div class="when-an-individual">
+            When an individual starts earning, a pan card is needed for filing
+            income tax returns. A PAN Card is a permanent account number issued
+            by the Indian income tax department. One can also apply for a pan
+            card before they turn the age of 18 years but it will be seen as a
+            minor pan card.
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-wrapper">
+          <div class="apply-for-a">Apply for a pan card</div>
+        </div>
+        <img class="vector-icon" alt="" src="{%static 'public/vector.svg'%}" />
+      </div>
+      <div class="magnifyingglass-parent">
+        <img
+          class="magnifyingglass-icon"
+          alt=""
+          src="{%static 'public/magnifyingglass.svg'%}"
+        />
+        <div class="search">search</div>
+      </div>
+      <div class="todo">
+        <div class="instance-parent">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper" >
+            <b class="vote-with" id="vote"></b>
+          </div>
+        </div>
+        <div class="instance-group">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="pan"
+              ></b
+            >
+          </div>
+        </div>
+        <div class="instance-container">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="pass"
+              ></b
+            >
+          </div>
+        </div>
+        <div class="instance-parent1">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent2">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent3">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent4">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent5">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent6">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="license"></b>
+          </div>
+        </div>
+        <div class="to-do-wrapper">
+          <b class="apply-for-a">to do</b>
+        </div>
+      </div>
+      <div class="history">
+        <div class="apply-for-a-pan-card-container">
+          <div class="apply-for-a1"></div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-container">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-frame">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper1">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper2">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper3">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-car-driving-licenc-wrapper">
+          <div class="apply-for-a2">Apply for a car driving licences</div>
+        </div>
+        <div class="apply-for-a-car-driving-licenc-container">
+          <div class="apply-for-a2">
+            Apply for a car driving licences kjg;ahguha;gha;g;ajb;ga;ouhg
+          </div>
+        </div>
+        <div class="history-wrapper">
+          <b class="apply-for-a">History</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ser" class="center"></div>
+  </body>
+  <script>
+    const Skip=document.getElementById('skip');
+    const Divsion=document.getElementById('main');
+    const Form=document.getElementById('form-skip');
+    const Ser=document.getElementById('ser');
+    var Vote=document.getElementById('vote')
+    var License=document.getElementById('license')
+    var Pan=document.getElementById('pan')
+    var Pass=document.getElementById('pass')
+    Ser.classList.add('not-visible')
+    
+    Skip.addEventListener('click',function hide(){
+      window.location.replace('/validate/')
+
+    });
+
+    $(document).ready(function() {
+    $("#submit-form").submit(function(event) {
+    event.preventDefault();
+
+    var data = $(this).serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "/data/",
+      data: data,
+      success: function(response) {
+        if(response.success){
+          Form.classList.add('not-visible');
+          Divsion.classList.remove('not-visible');
+          Divsion.classList.add('blur');
+          Ser.classList.remove('not-visible');
+          Ser.innerHTML=response.success;
+          window.location.replace('/validate/')
+          
+          
+          function hide(){
+            Divsion.classList.remove('blur')
+            Ser.classList.add('not-visible')
+
+          }
+          setTimeout(hide,6*1000)
+          
+        }
+        else{
+          Form.classList.add('not-visible');
+          Ser.innerHTML=response.error;
+          function hide1(){
+            Divsion.classList.remove('not-visible')
+            Ser.classList.add('not-visible')
+
+          }
+          setTimeout(hide1,3*1000)          
+        }
+      }
+    });
+  });
+});
+
+  </script>
+</html>

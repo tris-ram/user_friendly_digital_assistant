@@ -1,0 +1,286 @@
+.explore {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-decoration: none;
+}
+.explore-wrapper {
+  position: absolute;
+  top: 454px;
+  right: 691px;
+  border-radius: var(--br-base);
+  background-color: var(--color-lime);
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-xl);
+  box-sizing: border-box;
+}
+.multi {
+  color: var(--color-lime);
+}
+.are-you-in-container,
+.welcome-to-multilegalinfo-container {
+  position: absolute;
+  left: 0;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.are-you-in-container {
+  top: 164px;
+  letter-spacing: 0.05em;
+  width: 800px;
+}
+.welcome-to-multilegalinfo-container {
+  top: 0;
+  font-size: 72px;
+  width: 891px;
+}
+.frame-parent {
+  position: absolute;
+  top: 288px;
+  left: 150px;
+  width: 891px;
+  height: 516px;
+  font-size: var(--font-size-17xl);
+}
+.multilingual-legal-information1 {
+  margin-bottom: 0;
+}
+.multilingual-legal-information {
+  margin: 0;
+  font-family: inherit;
+  padding-left: 48px;
+}
+.access-legal-resources {
+  margin: 0;
+  font-size: var(--font-size-3xl);
+}
+.multilingual-legal-information-container {
+  width: 562px;
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.expertise-and-accuracy {
+  margin-block-start: 0;
+  margin-block-end: 20px;
+}
+.multilingual-legal-information-parent {
+  position: absolute;
+  top: 1081px;
+  left: calc(50% - 715px);
+  width: 1431px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-31xl);
+  box-sizing: border-box;
+  gap: 60px 180px;
+  font-size: var(--font-size-17xl);
+}
+.what-we-offer {
+  position: absolute;
+  top: 954px;
+  left: calc(50% - 130px);
+  text-transform: capitalize;
+  color: var(--color-lime);
+  text-align: center;
+}
+.icon {
+  position: absolute;
+  top: 260px;
+  left: 1042px;
+  width: 802.5px;
+  height: 535px;
+  object-fit: cover;
+}
+.trustworthy-source {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  letter-spacing: 0.1em;
+}
+.rest-assured-that {
+  color: var(--color-white);
+}
+.rest-assured-that-the-informat {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+.trustworthy-source-rest-container {
+  width: 1390px;
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.trustworthy-source-rest-assur-parent {
+  position: absolute;
+  top: 1748px;
+  left: calc(50% - 725px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-11xl);
+  gap: 80px 0;
+  font-size: var(--font-size-17xl);
+  color: var(--color-lime);
+}
+.why-choose-us {
+  position: absolute;
+  top: 1621px;
+  left: calc(50% - 140px);
+  text-transform: capitalize;
+  color: var(--color-lime);
+}
+.get-started-today {
+  margin: 0;
+}
+.signing-up-is {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+}
+.get-started-today-container {
+  width: 772px;
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.get-started-today-signing-up-i-parent,
+.sign-up-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-wrapper {
+  border-radius: 20.07px;
+  background-color: var(--color-whitesmoke);
+  padding: 12.542709350585938px 37.62812805175781px;
+  font-size: 30.1px;
+  color: var(--color-black);
+}
+.get-started-today-signing-up-i-parent {
+  position: absolute;
+  top: 2510px;
+  left: calc(50% - 556.3px);
+  border-radius: var(--br-base);
+  background-color: var(--color-lime);
+  padding: var(--padding-31xl);
+  gap: 0 60px;
+}
+.have-questions-or {
+  flex: 1;
+  position: relative;
+  text-transform: capitalize;
+}
+.contact-us-wrapper {
+  border-radius: 16.13px;
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10.084322929382324px 30.252967834472656px;
+  font-size: var(--font-size-5xl-2);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+.have-questions-or-need-assista-parent {
+  position: absolute;
+  top: 2917px;
+  left: calc(50% - 481px);
+  width: 961px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-81xl);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-segoe-ui);
+}
+.all-rights-reserved {
+  position: absolute;
+  top: 3173px;
+  left: calc(50% - 126px);
+  font-size: 19.4px;
+  font-family: var(--font-inter);
+}
+.egal {
+  color: var(--color-whitesmoke);
+}
+.multilegalinfo {
+  position: absolute;
+  top: 3076px;
+  left: calc(50% - 130px);
+  text-transform: capitalize;
+  color: var(--color-lime);
+}
+.head-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: blur(100px);
+  width: 1920px;
+  height: 148px;
+}
+.multilegalinfo1 {
+  position: absolute;
+  top: 101px;
+  left: 50px;
+  font-size: var(--font-size-21xl);
+  text-transform: capitalize;
+}
+.login-wrapper,
+.sign-up-container {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  border-radius: var(--br-base);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  color: var(--color-black);
+}
+.login-wrapper {
+  right: 244px;
+  background-color: var(--color-lime);
+  width: 144px;
+  padding: var(--padding-3xs) var(--padding-xl);
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+.head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(100px);
+  width: 1920px;
+  height: 148px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-lime);
+}
+.home-bf-login {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  height: 3255px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'global.css'%}" />
+    <link rel="stylesheet" href="{%static 'Main.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    />
+    <style>
+      .not-visible{
+        display: none;
+      }
+      .blur{
+        background-color: white;
+        opacity: 10%;
+      }
+      .center {
+      border: 5px solid;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body onload="validate()">
+    <div id="main">
+    <div class="main">
+      <b class="multilegalinfo4" id="multiLegalinfoText">
+        <span>Multi</span>
+        <span class="l4">L</span>
+        <span class="egal4">egal</span>
+        <span>info</span>
+      </b>
+      <div class="main-child"></div>
+      <div class="content">
+        <div class="content-child"></div>
+        <div class="when-an-individual-starts-earn-wrapper">
+          <div class="when-an-individual">
+            When an individual starts earning, a pan card is needed for filing
+            income tax returns. A PAN Card is a permanent account number issued
+            by the Indian income tax department. One can also apply for a pan
+            card before they turn the age of 18 years but it will be seen as a
+            minor pan card.
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-wrapper">
+          <div class="apply-for-a"></div>
+        </div>
+        <img class="vector-icon" alt="" src="{%static 'public/vector.svg'%}" />
+      </div>
+      <div class="magnifyingglass-parent">
+        <img
+          class="magnifyingglass-icon"
+          alt=""
+          src="{%static 'public/magnifyingglass.svg'%}"
+        />
+        <div class="search">search</div>
+      </div>
+      <div class="todo">
+        <div class="instance-parent">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper" >
+            <b class="vote-with" id="vote"></b>
+          </div>
+        </div>
+        <div class="instance-group">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="pan"
+              ></b
+            >
+          </div>
+        </div>
+        <div class="instance-container">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="pass"
+              ></b
+            >
+          </div>
+        </div>
+        <div class="instance-parent1">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent2">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent3">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent4">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent5">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with"
+              >Marry anyone - (with parents consent if you wish)</b
+            >
+          </div>
+        </div>
+        <div class="instance-parent6">
+          <img class="ellipse-icon" alt="" src="{%static 'public/ellipse-1.svg'%}" />
+
+          <div class="vote-with-a-voter-id-wrapper">
+            <b class="vote-with" id="license"></b>
+          </div>
+        </div>
+        <div class="to-do-wrapper">
+          <b class="apply-for-a">to do</b>
+        </div>
+      </div>
+      <div class="history">
+        <div class="apply-for-a-pan-card-container">
+          <div class="apply-for-a1"></div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-container">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-frame">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper1">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper2">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-pan-card-akjbckjbk-wrapper3">
+          <div class="apply-for-a2">
+            Apply for a pan card akjbckjbkjbljablvjbjalvjbaljvl,jvlajbnv a,jbvla
+          </div>
+        </div>
+        <div class="apply-for-a-car-driving-licenc-wrapper">
+          <div class="apply-for-a2">Apply for a car driving licences</div>
+        </div>
+        <div class="apply-for-a-car-driving-licenc-container">
+          <div class="apply-for-a2">
+            Apply for a car driving licences kjg;ahguha;gha;g;ajb;ga;ouhg
+          </div>
+        </div>
+        <div class="history-wrapper">
+          <b class="apply-for-a">History</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var Vote=document.getElementById('vote')
+    var License=document.getElementById('license')
+    var Pan=document.getElementById('pan')
+    var Pass=document.getElementById('pass')
+     function validate(){
+      $.ajax({
+        url:'/validate/',
+        method:'POST',
+        dataType:'json',
+        success:function(response){
+          if (response.success){
+          const vot=response.vot
+          const pan=response.pan
+          const lic=response.lic
+          const pas=response.pas
+          if(vot==false){
+            Vote.innerHTML="pls apply for voter id"
+          }
+          if (pan==false){
+            Pan.innerHTML="pls apply for pan card"
+
+          }
+          if (lic==false){
+            License.innerHTML="pls apply for license"
+          }
+          if (pas==false){
+            Pass.innerHTML="pls apply for passport"
+          }
+
+          }
+          else{
+            Vote.innerHTML=response.error
+          }
+        }  
+      
+      })
+     }
+  </script>
+  </body>
+</html>
